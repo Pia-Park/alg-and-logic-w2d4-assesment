@@ -10,8 +10,9 @@ let arr2 = [56, 98, 65, 3, 4, 58, 68, 90, 12, 34, 45]
 
 
 const halfSorted = function(arr) {    
-    let middle = Math.floor(arr.length / 2);
     
+    let middle = Math.floor(arr.length / 2);
+
     for(let i = 0; i < middle - 1; i++){
         for(let j = 0; j < middle - 1; j++){
             if(arr[j] > arr[j + 1]){
@@ -39,7 +40,7 @@ const halfSorted = function(arr) {
 
 //results --> [2, 4, 8, 34, 54, 78, 567, 99, 77, 45, 23, 7, 6]
 
-console.log(halfSorted(arr2));
+// console.log(halfSorted(arr2));
 
 //results --> [3, 4, 56, 58, 65, 98, 90, 68, 45, 34, 12]
 
